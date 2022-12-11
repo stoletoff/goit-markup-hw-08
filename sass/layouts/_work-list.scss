@@ -1,0 +1,45 @@
+.work-list {
+    display: flex;
+
+    &__item {
+        position: relative;
+        z-index: 0;
+    }
+
+    &__box {
+        position: absolute;
+        @include flexCenter();
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+
+    &__description {
+        display: block;
+        font-size: 14px;
+        line-height: calc(16 / 14);   
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: $colorWhite;
+    
+    }
+
+    &__item:not(:last-child) {
+        width: calc((100% - 60px) / 3);
+        margin-right: 30px;
+    } 
+    
+    &__img {
+        display:block; 
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+  
+

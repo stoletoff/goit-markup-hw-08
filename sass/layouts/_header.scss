@@ -1,0 +1,24 @@
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+
+.logo {
+    color:$colorBlack; 
+
+    font-family: $fontLogo;
+    font-size: 26px;
+    font-weight:700; 
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+}
+
+.accent {
+    color:var(--accent-color);
+}
+
+.accent-studio {
+    color: $colorWhite;
+}
+

@@ -1,0 +1,17 @@
+.footer-social {
+    @include flexDirection();
+    margin-left: 70px;
+
+    &__join {
+        display: flex;
+        font-size: 14px;
+        line-height: calc(16 / 14);   
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px; 
+
+        color:rgba(255, 255, 255, 1);
+    }
+}
+
+

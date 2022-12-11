@@ -1,0 +1,50 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    border-radius: 4px;
+    background-color: $colorWhite;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+
+    &__close-button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        
+
+        @include flexCenter();
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: $colorWhite;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 0;
+        cursor: pointer;
+    
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(23 / 14);
+        color:var(--secondary-text-color);
+        margin-bottom: 12px;
+    }
+} 
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+
+

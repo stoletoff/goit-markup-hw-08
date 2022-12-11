@@ -1,0 +1,55 @@
+.comand-list {
+    display: flex;
+
+    &__item {
+        flex-direction:column;
+        background-color: $colorWhite;
+        width: calc((100% - 90px) / 4);
+        align-items: center;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    &__img {
+        display:block; 
+        max-width: 100%;
+    }
+
+    &__name {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    
+        color:var(--secondary-text-color);
+    
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: calc(19 / 16);
+    }
+
+    &__paragraph {
+        text-align: center;
+        font-size: 16px;
+        line-height: calc(19 / 16);   
+        margin-bottom: 16px; 
+    }
+    
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+

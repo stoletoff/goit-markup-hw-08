@@ -1,0 +1,32 @@
+.section {
+   @extend %section;
+}  
+
+.section-title {
+    margin-bottom: 50px;
+
+    color:var(--secondary-text-color);
+
+    font-size:36px;
+    font-weight: 700;
+    line-height: calc(42 / 36);
+    text-align: center;
+}
+
+.about {
+    padding-top: 0px;
+
+    &--section {
+        padding-top:94px;
+        padding-bottom:94px
+    }
+}
+
+.about-team {
+    background-color: #F5F4FA;
+
+    &--section {
+        padding-top:94px;
+        padding-bottom:94px
+    }
+}
