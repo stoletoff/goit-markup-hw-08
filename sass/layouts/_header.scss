@@ -1,5 +1,6 @@
 .page-header {
     border-bottom: 1px solid #ECECEC;
+    position: relative;
 }
 
 
@@ -12,6 +13,11 @@
     font-weight:700; 
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
+
+    @media screen and (max-width:767px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 
 .accent {

@@ -13,6 +13,17 @@
     <header class="page-header">
       <div class="container container--main-box">
         <a href="#" lang="en" class="logo"><span class="accent">Web</span><span>Studio</span></a>
+        <button class="mob-button is-open" data-menu-button>
+          <svg 
+          width="40" 
+          height="40" 
+          aria-label="Переключатель мобильного меню"
+          aria-expanded="false"
+          >
+            <use class="mob-button__close" href="./images/symbol-defs-optimized.svg#icon-close_40px"></use>
+            <use class="mob-button__open" href="./images/symbol-defs-optimized.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
         <nav>
           <ul class="site-nav">
             <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Студія</a></li>
@@ -44,7 +55,7 @@
     </header>
 
     <main>
-      <section class="hero hero--overlay">
+      <!-- <section class="hero hero--overlay">
           <h1 class="hero__title">Ефективні рішення для<br> вашого бізнесу</h1>
           <button type="button" class="button" data-modal-open>Замовити послугу</button>
             <div class="backdrop is-hidden" data-modal>
@@ -124,7 +135,7 @@
                   </form>
               </div>  
             </div>
-      </section>
+      </section> -->
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Ключові якості відрізняючі нас від інших</h2>
@@ -459,5 +470,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
