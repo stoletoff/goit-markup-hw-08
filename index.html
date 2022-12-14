@@ -184,19 +184,28 @@
           <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="work-list">
               <li class="work-list__item">
-                <img class="work-list__img" src="./images/box1.jpg" alt="Кодування за макетом" width="370" height="294" />
+                <picture>
+                  <source srcset="./images/worklist/apps.jpg 1x, ./images/worklist/apps@2x.jpg 2x" />
+                  <img src="./images/worklist/apps.jpg 1x" alt="Кодування за макетом" width="370" height="294" />
+                </picture>
                 <div class="work-list__box">
                   <h4 class="work-list__description">Десктопні додатки</h4>
                 </div>
               </li>
               <li class="work-list__item">
-                <img class="work-list__img" src="./images/box2.jpg" alt="Адаптивна WEB-розробка" width="370" height="294" />
+                <picture>
+                  <source srcset="./images/worklist/mob-apps.jpg 1x, ./images/worklist/mob-apps@2x.jpg 2x" />
+                  <img src="./images/worklist/mob-apps.jpg 1x" alt="Адаптивна WEB-розробка" width="370" height="294" />
+                </picture>
                 <div class="work-list__box">
                   <h4 class="work-list__description">Мобільні додатки</h4>
                 </div>
               </li>
               <li class="work-list__item">
-                <img class="work-list__img" src="./images/box3.jpg" alt="Вибір кольору на планшеті" width="370" height="294" />
+                <picture>
+                  <source srcset="./images/worklist/solution.jpg 1x, ./images/worklist/solution@2x.jpg 2x" />
+                  <img src="./images/worklist/solution.jpg 1x" alt="Вибір кольору на планшеті" width="370" height="294" />
+                </picture>
                 <div class="work-list__box">
                   <h4 class="work-list__description">Дизайнерські рішення</h4>
                 </div>
@@ -204,12 +213,17 @@
             </ul>
         </div>
       </section>
-      <!-- <section class="about-team about-team--section">
-        <div class="container">
+      <section class="about-team about-team--section">
+        <div class="container container--about-team">
           <h2 class="section-title">Наша команда</h2>
             <ul class="comand-list">
               <li class="comand-list__item">
-                <img class="comand-list__img" src="./images/designer.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
+                <picture>
+                  <source srcset="./images/team/team-mob/product-designer.jpg 1x, ./images/team/team-mob/product-designer@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/team/team-tab/product-designer.jpg 1x, ./images/team/team-tab/product-designer@2x.jpg 2x" media="(max-width: 1199px)" width="354" height="374"/>
+                  <source srcset="./images/team/team-desktop/product-designer.jpg 1x, ./images/team/team-desktop/product-designer@2x.jpg 2x" media="(min-width: 1200px)" width="270" height="260"/>
+                  <img src="./images/team/team-mob/product-designer.jpg 1x" alt="Ігор Дем'яненко" width="450" height="460" />
+                </picture>
                   <div class="comand-list__name">
                     <h3 class="comand-list__title">Ігор Дем'яненко</h3>
                     <p class="comand-list__paragraph" lang="en">Product Designer</p>
@@ -246,7 +260,12 @@
                   </div>
               </li>
               <li class="comand-list__item">
-                <img class="comand-list__img" src="./images/frontend.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+                <picture>
+                  <source srcset="./images/team/team-mob/frontend-developer.jpg 1x, ./images/team/team-mob/frontend-developer@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/team/team-tab/frontend-developer.jpg 1x, ./images/team/team-tab/frontend-developer@2x.jpg 2x" media="(max-width: 1199px)" width="354" height="374"/>
+                  <source srcset="./images/team/team-desktop/frontend-developer.jpg 1x, ./images/team/team-desktop/frontend-developer@2x.jpg 2x" media="(min-width: 1200px)" width="270" height="260"/>
+                  <img src="./images/team/team-mob/frontend-developer.jpg 1x" alt="Ольга Рєпіна" width="450" height="460" />
+                </picture>
                   <div class="comand-list__name">
                     <h3 class="comand-list__title">Ольга Рєпіна</h3>
                     <p class="comand-list__paragraph" lang="en">Frontend Developer</p>
@@ -283,7 +302,12 @@
                   </div>
               </li>
               <li class="comand-list__item">
-                <img class="comand-list__img" src="./images/marketing.jpg" alt="Микола Тарасов" width="270" height="260" />
+                <picture>
+                  <source srcset="./images/team/team-mob/marketing.jpg 1x, ./images/team/team-mob/marketing@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/team/team-tab/marketing.jpg 1x, ./images/team/team-tab/marketing@2x.jpg 2x" media="(max-width: 1199px)" width="354" height="374"/>
+                  <source srcset="./images/team/team-desktop/marketing.jpg 1x, ./images/team/team-desktop/marketing@2x.jpg 2x" media="(min-width: 1200px)" width="270" height="260" />
+                  <img src="./images/team/team-mob/marketing.jpg 1x" alt="Ігор Дем'яненко" width="450" height="460" />
+                </picture>
                  <div class="comand-list__name">
                   <h3 class="comand-list__title">Микола Тарасов</h3>
                   <p class="comand-list__paragraph" lang="en">Marketing</p>
@@ -320,7 +344,12 @@
                  </div>
               </li>
               <li class="comand-list__item">
-                <img class="comand-list__img" src="./images/ui-designer.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+                <picture>
+                  <source srcset="./images/team/team-mob/ui-designer.jpg 1x, ./images/team/team-mob/ui-designer@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/team/team-tab/ui-designer.jpg 1x, ./images/team/team-tab/ui-designer@2x.jpg 2x" media="(max-width: 1199px)" width="354" height="374"/>
+                  <source srcset="./images/team/team-desktop/ui-designer.jpg 1x, ./images/team/team-desktop/ui-designer@2x.jpg 2x" media="(min-width: 1200px)" width="270" height="260"/>
+                  <img src="./images/team/team-mob/ui-designer.jpg 1x" alt="Михайло Єрмаков" width="450" height="460" />
+                </picture>
                   <div class="comand-list__name">
                     <h3 class="comand-list__title">Михайло Єрмаков</h3>
                     <p class="comand-list__paragraph" lang="en">UI Designer</p>
@@ -358,7 +387,7 @@
               </li>
             </ul>
         </div>
-      </section> -->
+      </section>
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>

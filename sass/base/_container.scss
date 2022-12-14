@@ -6,6 +6,19 @@
     outline: 1px dashed red;
     overflow:hidden;
 
+    &--about-team {
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction:column;
+            width: calc((100% - 60px) / 2);
+
+        }
+    }
+
     &--main-box {
         @media screen and (max-width: 767px) {
             display: flex;
