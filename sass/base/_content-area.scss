@@ -1,3 +1,8 @@
 .content-area {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     @include flexCenter($cross-axis: baseline, $main-axis:null);
 }

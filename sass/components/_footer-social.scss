@@ -1,6 +1,12 @@
 .footer-social {
-    @include flexDirection();
-    margin-left: 70px;
+    margin-left: 165px;
+    
+
+    @media screen and (min-width: 1200px) { 
+        @include flexDirection();
+        margin-left: 70px; 
+    }
+    
 
     &__join {
         display: flex;
@@ -11,6 +17,11 @@
         margin-bottom: 20px; 
 
         color:rgba(255, 255, 255, 1);
+
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
