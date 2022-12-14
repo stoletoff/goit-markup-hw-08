@@ -1,7 +1,6 @@
 .social-box {
     @include flexCenter($cross-axis:null);
     justify-self: center;
-    
 
     &__link {
         @include flexCenter();

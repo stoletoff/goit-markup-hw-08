@@ -1,5 +1,11 @@
 .footer-social {
     margin-left: 165px;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
     
 
     @media screen and (min-width: 1200px) { 
@@ -9,6 +15,8 @@
     
 
     &__join {
+
+
         display: flex;
         font-size: 14px;
         line-height: calc(16 / 14);   
@@ -17,6 +25,11 @@
         margin-bottom: 20px; 
 
         color:rgba(255, 255, 255, 1);
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            text-align: center;
+        }
 
         @media screen and (min-width: 768px) and (max-width: 1199px){
             align-items: center;
