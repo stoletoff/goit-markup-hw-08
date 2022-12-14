@@ -40,11 +40,18 @@
     }
 
     &__text {
+        
         @include flexCenter($main-axis:start);
-        padding-left: 12px;
-        font-size: 14px;
-        line-height: calc(24 / 14);
+        
+        font-size: 12px;
+        line-height: calc(14 / 12);
         color: #757575;
+
+        @media screen and (min-width: 1200px) {
+            padding-left: 12px;  
+            font-size: 14px;
+            line-height: calc(24 / 14);
+        }
     }
     
     &__text span {
