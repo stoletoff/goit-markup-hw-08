@@ -6,17 +6,7 @@
     align-items: center;
     margin-left: auto;
 
-    &__close {
-        display: none;
-    }
-
-    &.is-open &__close {
-        display: block;
-    }
-
-    &.is-open &__open {
-        display: none;
-    }
+  
 
     @media screen and (min-width: 768px) {
         display: none;

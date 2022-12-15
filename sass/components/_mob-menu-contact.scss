@@ -1,0 +1,23 @@
+.mob-menu-contact {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 64px;
+
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__mail {
+        
+        font-size: 34px;
+        line-height: calc(40 / 34);
+        color: #2196F3;
+    }
+
+
+    &__tel {
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        color: var(--primary-text-color);
+    }
+}

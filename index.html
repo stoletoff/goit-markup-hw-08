@@ -13,17 +13,53 @@
     <header class="page-header">
       <div class="container container--main-box">
         <a href="#" lang="en" class="logo"><span class="accent">Web</span><span>Studio</span></a>
-        <button class="mob-button is-open" data-menu-button>
+        <button class="mob-button" data-menu-open>
           <svg 
           width="40" 
           height="40" 
           aria-label="Переключатель мобильного меню"
           aria-expanded="false"
           >
-            <use class="mob-button__close" href="./images/symbol-defs-optimized.svg#icon-close_40px"></use>
             <use class="mob-button__open" href="./images/symbol-defs-optimized.svg#icon-menu_40px"></use>
           </svg>
         </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="mob-container">
+            <button class="close-button " data-menu-close>
+              <svg 
+              width="40" 
+              height="40" 
+              aria-label="Переключатель мобильного меню"
+              aria-expanded="false"
+              >
+              <use class="mob-menu__close" href="./images/symbol-defs-optimized.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+                <ul class="mob-menu-nav">
+                  <li class="mob-menu-nav__item"><a href="#" class="mob-menu-nav__link mob-menu-nav__link--current">Студія</a></li>
+                  <li class="mob-menu-nav__item"><a href="./portfolio.html" class="mob-menu-nav__link">Портфоліо</a></li>
+                  <li class="mob-menu-nav__item"><a href="#" class="mob-menu-nav__link">Контакти</a></li>
+                </ul>
+                <ul class="mob-menu-contact">
+                  <li class="mob-menu-contact__item">
+                  <a class="mob-menu-contact__mail" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                  </a>
+                  </li>
+                  <li class="mob-menu-contact__item">
+                  <a class="mob-menu-contact__tel" href="tel:+380961111111">
+                  +38 096 111 11 11
+                  </a>
+                  </li>
+                </ul>
+                <ul class="mob-menu-social">
+                  <li class="mob-menu-social__item"><a href="#" class="mob-menu-social__link">Instagram</a></li>
+                  <li class="mob-menu-social__item"><a href="#" class="mob-menu-social__link">Twitter</a></li>
+                  <li class="mob-menu-social__item"><a href="#" class="mob-menu-social__link">Facebook</a></li>
+                  <li class="mob-menu-social__item"><a href="#" class="mob-menu-social__link">LinkedIn</a></li>
+                </ul>
+          </div>
+        </div>
         <nav>
           <ul class="site-nav">
             <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Студія</a></li>
@@ -137,7 +173,7 @@
             </div>
       </section>
       <section class="section">
-        <div class="container">
+        <div class="container fix">
           <h2 class="visually-hidden">Ключові якості відрізняючі нас від інших</h2>
             <ul class="feature-list">
               <li class="feature-list__item">
@@ -180,7 +216,7 @@
         </div>
       </section>
       <section class="about about--section">
-        <div class="container">
+        <div class="container fix">
           <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="work-list">
               <li class="work-list__item">
@@ -389,7 +425,7 @@
         </div>
       </section>
       <section class="section">
-        <div class="container">
+        <div class="container fix">
           <h2 class="section-title">Постійні клієнти</h2>
             <ul class="client-list">
               <li class="client-list__item">

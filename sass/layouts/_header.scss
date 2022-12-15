@@ -3,11 +3,23 @@
     position: relative;
 }
 
+.mob-menu {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    padding-right: none;
 
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
 
 .logo {
     color:$colorBlack; 
-
     font-family: $fontLogo;
     font-size: 26px;
     font-weight:700; 
@@ -26,6 +38,7 @@
     @media screen and (max-width:767px) {
         padding-top: 16px;
         padding-bottom: 16px;
+        padding-left: 15px;
     }
 
     @media screen and (min-width:768px) {

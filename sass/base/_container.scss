@@ -1,19 +1,22 @@
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px dashed red;
-    overflow:hidden;
+    // outline: 1px dashed red;
 
     &--about-team {
+        padding-left: 15px;
+        padding-right: 15px;
+
         @media screen and (max-width: 767px) {
             display: block;
+            overflow:hidden;
+
         }
 
         @media screen and (min-width: 768px) {
             display: flex;
             flex-direction:column;
+
             width: calc((100% - 60px) / 2);
 
         }
@@ -24,6 +27,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
 
         }
 
@@ -41,6 +45,9 @@
 
     @media screen and (min-width: 768px) {
         width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
+
     }
 
     @media screen and (min-width:1200px) {
@@ -54,4 +61,20 @@
 
     
 }
+
+.mob-container {
+    width: 100vw;
+    height: 100vh;
+    outline: 1px dashed greenyellow;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+}
+
+.fix {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
 
