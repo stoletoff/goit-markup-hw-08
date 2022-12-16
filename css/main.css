@@ -23,6 +23,12 @@ a {
   letter-spacing: 0.02em;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
