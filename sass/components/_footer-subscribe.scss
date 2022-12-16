@@ -1,6 +1,6 @@
 .footer-subscribe {
     @include flexDirection();
-    margin-left: auto;
+        margin-left: auto;
 
     @media screen and (max-width: 767px) {
         display: block;
