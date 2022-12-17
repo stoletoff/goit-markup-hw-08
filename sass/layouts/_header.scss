@@ -13,7 +13,7 @@
     left: 0;
     padding-right: none;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         display: none;
     }
 }
@@ -35,13 +35,13 @@
     }
     
 
-    @media screen and (max-width:767px) {
+    @include mobile-max {
         padding-top: 16px;
         padding-bottom: 16px;
         padding-left: 15px;
     }
 
-    @media screen and (min-width:768px) {
+    @include tablet {
         display: flex;
         align-items: center;
         justify-content: center;

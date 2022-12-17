@@ -1,14 +1,14 @@
 .footer-social {
     margin-left: 165px;
 
-    @media screen and (max-width: 767px) {
+    @include mobile-max {
         display: block;
         margin: 0 auto;
         margin-bottom: 60px;
     }
     
 
-    @media screen and (min-width: 1200px) { 
+    @include desktop { 
         @include flexDirection();
         margin-left: 70px; 
     }
@@ -26,12 +26,12 @@
 
         color:rgba(255, 255, 255, 1);
 
-        @media screen and (max-width: 767px) {
+        @include mobile-max {
             display: block;
             text-align: center;
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1199px){
+        @include tablet-range {
             align-items: center;
             justify-content: center;
         }

@@ -1,19 +1,18 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    // outline: 1px dashed red;
 
     &--about-team {
         padding-left: 15px;
         padding-right: 15px;
 
-        @media screen and (max-width: 767px) {
+        @include mobile-max {
             display: block;
             overflow:hidden;
 
         }
 
-        @media screen and (min-width: 768px) {
+        @include tablet {
             display: flex;
             flex-direction:column;
 
@@ -23,7 +22,7 @@
     }
 
     &--main-box {
-        @media screen and (max-width: 767px) {
+        @include mobile-max {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -31,26 +30,26 @@
 
         }
 
-        @media screen and (min-width: 768px) {
+        @include tablet {
             display: flex;
             align-items: center;
             
         }
     } 
     
-    @media screen and (min-width: 480px) {
+    @include mobile {
         width: 480px;
 
     }
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         width: 768px;
         padding-left: 15px;
         padding-right: 15px;
 
     }
 
-    @media screen and (min-width:1200px) {
+    @include desktop {
         width: 1200px;
         text-align: start;
         margin: 0 auto;
@@ -65,7 +64,6 @@
 .mob-container {
     width: 100vw;
     height: 100vh;
-    // outline: 1px dashed greenyellow;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;

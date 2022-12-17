@@ -1,5 +1,5 @@
 .feature-list {
-    @media screen and (max-width: 767px) {
+    @include mobile-max {
         text-align: center;
         
         &__item:not(:last-child) {
@@ -55,7 +55,7 @@
     }
 
 
-    @media screen and (min-width:1200px) {
+    @include desktop {
         display: flex;
         flex-wrap: wrap; 
         &__item {

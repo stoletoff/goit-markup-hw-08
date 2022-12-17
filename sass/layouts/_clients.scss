@@ -29,7 +29,7 @@
          border-color: 1px solid var(--accent-color);
     }
 
-    @media screen and (max-width: 767px) {
+    @include mobile-max {
         margin: -15px;
         &__item {
             width: calc((100% - 60px) / 2);
@@ -37,13 +37,13 @@
         }
     }
 
-    @media screen and (max-width: 1199px) {
+    @include tablet-max {
         &__item {
             margin: 15px;
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin: -15px;
         &__item {
             display: flex;
@@ -59,7 +59,7 @@
     }
   
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         
 
         &__item {

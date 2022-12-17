@@ -2,7 +2,7 @@
     padding-top: 60px; 
     padding-bottom: 60px; 
     
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding-top: 94px; 
         padding-bottom: 94px; 
     }
@@ -19,7 +19,7 @@
     text-align: center;
 
     
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         margin-bottom: 50px;
         font-size:36px;
         line-height: calc(42 / 36);
@@ -33,7 +33,7 @@
     &--section {
         padding-bottom:94px;
 
-        @media screen and (max-width:1199px) {
+        @include tablet-max {
             display: none;  
         }
         
@@ -47,7 +47,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-        @media screen and (min-width:1200px) {
+    @include desktop {
             padding-top:90px;
             padding-bottom:94px  
         }

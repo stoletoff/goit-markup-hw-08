@@ -1,13 +1,13 @@
 .comand-list {
     display: block;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         margin: 0px;
     }
 
@@ -56,7 +56,7 @@
         }
 
 
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             display: block;
             padding-top: 30px;
             padding-bottom: 30px;
@@ -84,11 +84,11 @@
     
     &__item:not(:last-child) {
 
-        @media screen and (max-width:767px) {
+        @include mobile-max {
             margin-bottom: 30px;
         }
 
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             margin-right: 30px;
         }
     }    

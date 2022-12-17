@@ -2,11 +2,11 @@
     @include flexDirection();
         margin-left: auto;
 
-    @media screen and (max-width: 767px) {
+        @include mobile-max {
         display: block;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include tablet-range {
         margin: 0 auto;
         justify-content: center;
         align-items: center;
@@ -23,12 +23,12 @@
     
         color:rgba(255, 255, 255, 1);
 
-        @media screen and (max-width: 767px) {
+        @include mobile-max {
             display: block;
             text-align: center;
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include tablet-range {
             display: block;
         }
     }
@@ -44,7 +44,7 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
 
-        @media screen and (max-width: 767px) {
+        @include mobile-max {
             display: block;
             margin: 0 auto;
             max-width: 450px;
@@ -77,12 +77,12 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        @media screen and (max-width: 767px) {
+        @include mobile-max {
             display: block;
             margin: 0 auto;
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include tablet-range {
             display: block;
             margin: 0 auto;
         }
