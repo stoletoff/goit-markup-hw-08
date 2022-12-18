@@ -14,38 +14,85 @@
     <header class="page-header">
       <div class="container container--main-box">
         <a href="#" lang="en" class="logo"><span class="accent">Web</span><span>Studio</span></a>
+        <button class="mob-button" data-menu-open>
+          <svg 
+          width="40" 
+          height="40" 
+          aria-label="Переключатель мобильного меню"
+          aria-expanded="false"
+          >
+            <use class="mob-button__open" href="./images/symbol-defs-optimized.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="mob-container">
+            <button class="close-button " data-menu-close>
+              <svg 
+              width="40" 
+              height="40" 
+              aria-label="Переключатель мобильного меню"
+              aria-expanded="false"
+              >
+              <use class="mob-menu__close" href="./images/symbol-defs-optimized.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+                <ul class="mob-menu-nav">
+                  <li class="mob-menu-nav__item"><a href="#" class="mob-menu-nav__link mob-menu-nav__link--current">Студія</a></li>
+                  <li class="mob-menu-nav__item"><a href="./portfolio.html" class="mob-menu-nav__link">Портфоліо</a></li>
+                  <li class="mob-menu-nav__item"><a href="#" class="mob-menu-nav__link">Контакти</a></li>
+                </ul>
+                <ul class="mob-menu-contact">
+                  <li class="mob-menu-contact__item">
+                  <a class="mob-menu-contact__mail" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                  </a>
+                  </li>
+                  <li class="mob-menu-contact__item">
+                  <a class="mob-menu-contact__tel" href="tel:+380961111111">
+                  +38 096 111 11 11
+                  </a>
+                  </li>
+                </ul>
+                <ul class="mob-menu-social">
+                  <li class="mob-menu-social__item"><a href="#" class="mob-menu-social__link">Instagram</a></li>
+                  <li class="mob-menu-social__item"><a href="#" class="mob-menu-social__link">Twitter</a></li>
+                  <li class="mob-menu-social__item"><a href="#" class="mob-menu-social__link">Facebook</a></li>
+                  <li class="mob-menu-social__item"><a href="#" class="mob-menu-social__link">LinkedIn</a></li>
+                </ul>
+          </div>
+        </div>
         <nav>
-          <ul class="site-nav list">
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
-            <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
+          <ul class="site-nav">
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Студія</a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
             <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
           </ul>
         </nav>
-          <ul class="auth-nav list">
-            <li class="auth-nav__item">
-              <a class="auth-nav__link" href="mailto:info@devstudio.com">
-                <svg class="auth-nav__icon" width="16px" height="12px">
-                  <use href="./images/symbol-defs-optimized.svg#icon-envelope">
-                  </use>
-                </svg>
-              info@devstudio.com
-              </a>
-              </li>
-            <li class="auth-nav__item">
-              <a class="auth-nav__link" href="tel:+380961111111">
-                <svg class="auth-nav__icon"width="10px" height="16px">
-                  <use href="./images/symbol-defs-optimized.svg#icon-smartphone">
-                  </use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+        <ul class="auth-nav">
+          <li class="auth-nav__item">
+            <a class="auth-nav__link" href="mailto:info@devstudio.com">
+              <svg class="auth-nav__icon" width="16px" height="12px">
+                <use href="./images/symbol-defs-optimized.svg#icon-envelope">
+                </use>
+              </svg>
+            info@devstudio.com
+            </a>
+          </li>
+          <li class="auth-nav__item">
+            <a class="auth-nav__link" href="tel:+380961111111">
+              <svg class="auth-nav__icon"width="10px" height="16px">
+                <use href="./images/symbol-defs-optimized.svg#icon-smartphone">
+                </use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
     </div>
     </header>
     <main>
       <section class="section">
-        <div class="container">
+        <div class="container fix">
           <h1 class="visually-hidden">Наші проєкти</h1>
             <ul class="site-filter list">
               <li class="site-filter__item"><button class="site-filter__link site-filter__current" type="button">Усі</button></li>
@@ -54,7 +101,7 @@
               <li class="site-filter__item"><button class="site-filter__link" type="button">Дизайн</button></li>
               <li class="site-filter__item"><button class="site-filter__link" type="button">Маркетинг</button></li>
             </ul>
-            <ul class="project-cards">
+            <!-- <ul class="project-cards">
               <li class="project-cards__item">
                 <a class="project-cards__shadow" href="#">
                   <div class="project-cards__tumb">
@@ -163,14 +210,14 @@
                   </div>
                 </a>
               </li>
-            </ul>
+            </ul> -->
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container content-area">
         <div>
-          <a href="#" lang="en" class="logo footer__logo"><span class="accent">Web</span><span class="accent-studio">Studio</span></a>
+          <a href="#" lang="en" class="footer__logo logo"><span class="accent">Web</span><span class="accent-studio">Studio</span></a>
           <address  class="footer__list">
             <ul class="footer-nav list">
               <li class="footer-nav__item"><p class="footer-nav__address">м. Київ, пр-т Лесі Українки, 26</p></li>

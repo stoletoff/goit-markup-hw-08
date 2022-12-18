@@ -2,6 +2,24 @@
     @include flexCenter();
     margin-bottom: 34px;
 
+    @include mobile-max {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        &__item:nth-child(-n + 3) {
+            margin-bottom: 15px;
+        }
+    }
+
+    // &__item {
+    //     @include mobile-max {
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //     } 
+    // }
+    
+
     &__item:not(:last-child) {
         margin-right: 8px;
     }
