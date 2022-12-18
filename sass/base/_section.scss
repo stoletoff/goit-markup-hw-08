@@ -9,6 +9,18 @@
    
 }  
 
+.section-gallery {
+    @include mobile-max {
+        margin: 15px;
+    }
+}
+
+.section-gallery {
+    @include tablet-range {
+        margin: -15px;
+    }
+}
+
 .section-title {
     margin-bottom: 30px;
     color:var(--secondary-text-color);
