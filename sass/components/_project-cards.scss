@@ -4,10 +4,30 @@
     margin-top: 34px;
 
     @include mobile-max {
-
         
         &__item:not(:last-child) {
             margin-bottom: 30px;
+        }   
+    }
+
+
+    @include tablet-range {
+        display: flex;
+        justify-content: flex-start;
+
+        
+        &__item {
+            flex-direction: row;
+            text-align: start;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+            width: calc((100% - 60px) / 2);
+            margin: 15px
+        }  
+        
+        &__item:last-child {
+            margin-bottom: 0px;
         }   
     }
 

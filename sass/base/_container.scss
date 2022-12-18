@@ -2,22 +2,45 @@
     margin-left: auto;
     margin-right: auto;
 
+
+
     &--about-team {
         padding-left: 15px;
         padding-right: 15px;
 
         @include mobile-max {
             display: block;
-            overflow:hidden;
+            overflow: hidden;
 
         }
 
         @include tablet {
             display: flex;
-            flex-direction:column;
-
+            flex-direction: column;
             width: calc((100% - 60px) / 2);
 
+        }
+    }
+
+    &--galery {
+
+        @include mobile-max {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @include tablet-range {
+            padding-left: 0px;
+            padding-right: 0px; 
+        }
+
+        @include desktop {
+            width: 1200px;
+            text-align: start;
+            margin: 0 auto;
+            &--main-box {
+                @include flexCenter($main-axis:null);
+            }   
         }
     }
 
@@ -35,6 +58,8 @@
             align-items: center;
             
         }
+
+        
     } 
     
     @include mobile {
